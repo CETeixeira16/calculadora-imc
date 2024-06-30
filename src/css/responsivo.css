@@ -1,0 +1,56 @@
+@media (max-width: 980px){
+    #img img {
+        width: 25rem;
+    }
+}
+
+@media (max-width: 880px){
+    
+    #container{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-right: 20px;
+        padding: 0 10rem;
+    }
+    #img img { display: none;    
+    }   
+    
+}
+
+@media (max-width: 600px){
+
+    #img img { display: none;    
+    }  
+    
+    #container{
+    padding: 0;
+    margin: 0;
+    }
+
+    #title{
+        font-size: 2rem;
+    }
+
+    #instrucoes{
+        display: none;
+    }
+}
+
+@media (max-width: 400px){
+
+    #img img { display: none;    
+    }  
+    
+    #container{
+    padding: 0;
+    }
+
+    #title{
+        font-size: 1.8rem;
+    }
+
+    #instrucoes{
+        display: none;
+    }
+}

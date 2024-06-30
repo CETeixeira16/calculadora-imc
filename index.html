@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/estilo.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./src/img/cet-ico.png" type="image/x-icon">
+    <title>Calculadora de IMC</title>
+</head>
+
+<body>
+    <main id="container">
+        <section id="img">
+            <a href="https://darkcet.blogspot.com/" target="_blank"><img src="./src/img/cmi-04.png"
+                     alt="Logo comece hoje"></a>
+        </section>
+
+        <section id="calculator">
+
+            <form id="form">
+                <h1 id="title">Calculadora - IMC</h1>
+
+
+                <div class="input-box">
+                    <label for="weight">
+                        Peso em Kg:
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-scale"></i>
+                        <input type="number" id="weight" required>
+                        <span>Kg:</span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="height">
+                        Altura em metros:
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler"></i>
+                        <input type="number" step="0.01" id="height" required>
+                        <span>m:</span>
+                    </div>
+                </div>
+
+                <button id="calculate"> Calcular</button>
+
+            </form>
+
+            <div id="infos" class="hidden">
+                <div id="result">
+                    <div id="bmi">
+                        <span id="value"></span>
+                        <span>Seu IMC</span>
+                    </div>
+                    <div id="description">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div id="more_info">
+                    <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm">
+                        Mais inforações sobre IMC
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="./src/js/index.js"></script>
+
+   <section id="instrucoes">
+    <div class="texto">
+        <h2>Como utilizar a Calculadora.</h2> <br>
+           <p> No "Peso em Kg:" utilize números inteiros: <br>
+            Ex: 1,8kg arredonde para 2kg = 1,2kg arredonde para 2kg.<br>
+            No "Altura em m:" não utilize virgula (,), utilize ponto (.): <br>
+            Ex: 1,81m altere a virgula por ponto = 1.81m.            
+        </p> <br>
+        <h2> <mark> --> Cuidado com o resultado. <--</mark></h2> <br>
+           <p> A informação do IMC<mark> é apenas o primeiro passo </mark>para identificar a obesidade, apesar de na maioria das vezes ela identificar a obesidade, há fatores que podem dar um falso positivo.<br>
+            Ex: Dois homens de 1.81m com 110kg, sendo que um é um fisiculturista e o outo uma pessoa sedentária, o cálculo vai ser que ambos estão com "obesidade moderada", porém a realidade é diferente.<br>
+            Esse é apenas um exemplo então mesmo dando resultado positivo, se consultar com um especialista é sempre uma ótima opção.            
+        </p>
+    </div>
+   </section>
+</body>
+
+</html>
